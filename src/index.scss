@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+:root{
+    background-color: white;
+}
+input{
+    background-color: white;
+}
+select{
+    background-color: gray;
+    font-weight: bold;
+    color:white
+}
