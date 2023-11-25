@@ -7,14 +7,17 @@ type Props = {}
 export default function Fortunepage({}: Props) {
   const numbers: any = [1,2,3,4,5,6,7,8,9,10,11,12]
   return (
-    <div className='flex flex-col items-center  h-screen  text-black'>
+    <div className='flex flex-col  md:items-center  h-screen  text-black'>
  <div className='mt-5'> 
- <div className='relative flex items-center'>
+ <div className='relative flex items-center max-w-max '>
+ <img src="src/assets/background_img_1_1.jpg" className='relative h-12' alt="icon" />
   <p className='absolute  text-white left-2 text-sm'>결과풀이</p>
- <img src="src/assets/background_img_1_1.jpg" className='' alt="icon" />
+
 <p className='absolute left-28 text-white text-sm' >  올해의토정비결</p>
- <img src="src/assets/B2_icon_1.png" className='absolute top-2 left-16' alt="" />
- <button className='absolute top-1 right-2 btn btn-success text-white btn-sm ' onClick={()=>window.print()}>다운로드</button>
+<div> </div>
+
+ <img src="src/assets/icon/B2_icon_1.png" className='absolute top-2 left-16' alt="" />
+ <button className='absolute right-2 btn btn-success text-white btn-sm ' onClick={()=>window.print()}>다운로드</button>
  </div>
 
  <table className='border border-collapse mx-2 table mt-1 '>
@@ -86,8 +89,8 @@ export default function Fortunepage({}: Props) {
     </tbody>
  </table>
  <div className='mt-8 relative '>
- <img src="src/assets/background_img_1_2.jpg" alt="Bg" />
-<img src="src/assets/B2_icon_F_2.png" className='absolute -top-3 left-5' alt="" />
+ <img src="src/assets/background_img_1_2.jpg" className='' alt="Bg" />
+<img src="src/assets/icon/B2_icon_F_2.png" className='absolute -top-3 left-5' alt="" />
  </div>
 {/* <div className='border rounded-xl mt-5 h-64'>
 <p></p>
@@ -95,8 +98,8 @@ export default function Fortunepage({}: Props) {
 
 <div className='border rounded-xl bg-slate-100 flex flex-col items-center mt-5   p-6' style={{width:'600px'}}>
   <div className='bg-white p-4 flex flex-col gap-5'>
- <img src="src/assets/1.jpg" alt="1" />
- <img src="src/assets/S142.jpg" alt="S142" />
+ <img src="src/assets/avatar/1.jpg" alt="1" />
+ <img src="src/assets/poster/S142.jpg" alt="S142" />
  <div className='font-light leading-8 text-sm p-2  '>
    <p className='m-2 mb-5'>사호단기(四皓團棋) 소유세려(消遺世慮)
 네 명의 어른들이 바둑을 두면서 세상 근심을 잊고 있구나.
@@ -118,20 +121,20 @@ export default function Fortunepage({}: Props) {
  </div>
  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
-  <Poster poster={"src/assets/S142.jpg"} image={"src/assets/106.jpg"}/>
+  <Poster poster={"src/assets/poster/S142.jpg"} image={"src/assets/avatar/106.jpg"}/>
   <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
-  <Poster poster={"src/assets/S107.jpg"} image={"src/assets/107.jpg"}/>
+  <Poster poster={"src/assets/poster/S107.jpg"} image={"src/assets/avatar/107.jpg"}/>
   <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
-  <Poster poster={"src/assets/S108.jpg"} image={"src/assets/108.jpg"}/>
+  <Poster poster={"src/assets/poster/S108.jpg"} image={"src/assets/avatar/108.jpg"}/>
   <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
-  <Poster poster={"src/assets/S109.jpg"} image={"src/assets/109.jpg"}/>
+  <Poster poster={"src/assets/poster/S109.jpg"} image={"src/assets/avatar/109.jpg"}/>
   <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
  
-  <img src="src/assets/S110.jpg" alt="" className='w-full' />
+  <img src="src/assets/poster/S110.jpg" alt="" className='w-full' />
 
   {numbers.map ((num:any)=>{
  return <div key={num}><Months  month={`src/assets/month_img/${num}.jpg`}/> <hr /> </div>
@@ -139,6 +142,18 @@ export default function Fortunepage({}: Props) {
 
 <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
   <hr />
+  <img src="src/assets/poster/S082.jpg" alt="" />
+  <div className='flex'>
+  <img src="src/assets/avatar/82.jpg" alt="" />
+  </div>
+  <hr />
+  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <img src="src/assets/poster/S082.jpg" alt="" />
+  <div className=''>
+    <p className='inline'>  <img src="src/assets/avatar/82.jpg"className='inline-block ' alt="" /></p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tempore magni et recusandae doloribus quidem iste possimus porro deleniti quae. Nemo, dignissimos. Ab, fuga voluptate porro incidunt dolorem ad voluptates.
+
+</div>
   </div>
 </div>
  </div>

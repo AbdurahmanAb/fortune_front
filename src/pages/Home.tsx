@@ -76,7 +76,7 @@ var value = "menu1"
 
   return (
     <div className='flex '  >
-        <div className='w-36 md:w-56  p-3 md:p-1 bg-side h-screen fixed' >
+        <div className='w-0 md:w-56 sm:w-36 p-3 md:p-1 bg-side h-screen fixed' >
    
         <Accordion allowToggle className='mt-4 text-sm'>
   <AccordionItem className=' p-1 my-2 rounded bg-neutral-700'>
