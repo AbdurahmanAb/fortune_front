@@ -34,9 +34,12 @@ const FormComponent = () => {
     <label htmlFor="여자">여자</label>
     
    </div>
-   <div className="flex gap-2 items-center ">
-    <span className="bg-slate-200 p-1 text-sm font-semibold text-black w-32 text-center">생년월일시</span>
-  <div className="h-7 flex gap-1">
+   <div className="flex gap-2 items-center  ">
+    
+    <span className="bg-slate-200 p-1  text-sm font-semibold text-black w-32 text-center">생년월일시</span>
+  <div className="h-7 flex flex-col gap-1">
+    <div className="flex gap-2">
+
   <select name="day"  id="" className="p-1 text-center rounded">{
 numbers.map((num:ReactNode,i)=>{
  return <option key={i} value="" >{num}</option>
@@ -49,6 +52,7 @@ numbers.map((num:ReactNode,i)=>{
           </option>
         ))}
       </select>
+      
 <select name="year" id="year" className="p-1 text-center rounded">
         {years.map((year:any) => (
           <option key={year} value={year} >
@@ -56,11 +60,16 @@ numbers.map((num:ReactNode,i)=>{
           </option>
         ))}
       </select>
+      </div>
+      <div className="mb-2">
+ 
   </div>
-  
+  </div>
+
   
     
    </div>
+   
    <div className="flex gap-2 items-center ">
     <span className="bg-slate-200 p-1 text-sm font-semibold text-black w-32 text-center">양력/음력</span>
     <input type="radio" name="radio1" id="1"  />
@@ -93,9 +102,9 @@ numbers.map((num:ReactNode,i)=>{
     </div>
   </div>
 </dialog>
-    <figure className="flex gap-2 items-end mb-2"> <img src="src/assets/dot.gif" alt="" /> <img src="src/assets/input_img/barannae.jpg" alt="" />
+    <figure className="flex gap-2 items-end mb-2"> <img src="src/assets/icon/dot.gif" alt="" /> <img src="src/assets/input_img/barannae.jpg" alt="" />
     </figure>  
-  <img src="src/assets/underbar.jpg" alt="" />
+  <img src="src/assets/icon/underbar.jpg" alt="" />
     </div>
   )
 }

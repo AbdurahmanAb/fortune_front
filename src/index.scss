@@ -6,10 +6,23 @@
     background-color: white;
 }
 input{
-    background-color: white;
+   
+    background-color: white !important;
+}
+input[type="radio"]{
+    
+    background-color: white !important;
 }
 select{
-    background-color: gray;
+    padding:5px;
     font-weight: bold;
+    background-color:grey;
     color:white
+}
+.modal-box{
+    color: black;
+  background-color:  white;
+}
+label{
+    color:black
 }

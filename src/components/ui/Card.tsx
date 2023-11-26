@@ -19,9 +19,10 @@ const Card = (props:any) => {
       </div>
        
     </div>
-    <figure className="flex items-end">
+    <figure className="flex mt-2 items-end">
       <img src={props.img4} alt="" />
       <img src={props.img5} className="m-2 mt-4" alt="" /></figure>
+      <img src="src/assets/icon/underbar.jpg" alt="" />
     </div>
   )
 }

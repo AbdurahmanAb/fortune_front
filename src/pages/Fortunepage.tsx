@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Poster from '../components/ui/Poster'
 import Months from '@/components/ui/Months'
-
+import {FaArrowAltCircleUp}  from 'react-icons/fa'
 type Props = {}
 
 export default function Fortunepage({}: Props) {
@@ -89,14 +89,14 @@ export default function Fortunepage({}: Props) {
     </tbody>
  </table>
  <div className='mt-8 relative '>
- <img src="src/assets/background_img_1_2.jpg" className='' alt="Bg" />
+ <img src="src/assets/background_img_1_2.jpg" className='h-20' alt="Bg" />
 <img src="src/assets/icon/B2_icon_F_2.png" className='absolute -top-3 left-5' alt="" />
  </div>
 {/* <div className='border rounded-xl mt-5 h-64'>
 <p></p>
 </div> */}
 
-<div className='border rounded-xl bg-slate-100 flex flex-col items-center mt-5   p-6' style={{width:'600px'}}>
+<div className='border rounded-xl bg-slate-100 flex flex-col items-center mt-5 w-auto sm:w-[600px]  p-6 ' >
   <div className='bg-white p-4 flex flex-col gap-5'>
  <img src="src/assets/avatar/1.jpg" alt="1" />
  <img src="src/assets/poster/S142.jpg" alt="S142" />
@@ -119,19 +119,19 @@ export default function Fortunepage({}: Props) {
 인재들이 저절로 찾아오는 모양입니다. 그들이 자기 일처럼 힘써 도와주겠으니 하는 일에 어려
 움이 전혀 없겠습니다. 좋은 기회이니 부모에게 효도하고 가족간에 사랑하면서 살아야 합니다. </p>
  </div>
- <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+ <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/> </button>
   <hr />
   <Poster poster={"src/assets/poster/S142.jpg"} image={"src/assets/avatar/106.jpg"}/>
-  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <hr />
   <Poster poster={"src/assets/poster/S107.jpg"} image={"src/assets/avatar/107.jpg"}/>
-  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <hr />
   <Poster poster={"src/assets/poster/S108.jpg"} image={"src/assets/avatar/108.jpg"}/>
-  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <hr />
   <Poster poster={"src/assets/poster/S109.jpg"} image={"src/assets/avatar/109.jpg"}/>
-  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <hr />
  
   <img src="src/assets/poster/S110.jpg" alt="" className='w-full' />
@@ -140,14 +140,14 @@ export default function Fortunepage({}: Props) {
  return <div key={num}><Months  month={`src/assets/month_img/${num}.jpg`}/> <hr /> </div>
   })}
 
-<button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+<button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <hr />
   <img src="src/assets/poster/S082.jpg" alt="" />
   <div className='flex'>
   <img src="src/assets/avatar/82.jpg" alt="" />
   </div>
   <hr />
-  <button className='btn btn-square self-end btn-info text-white' onClick={()=>window.scrollTo(0,0)}>Top</button>
+  <button className='btn btn-square self-end btn-sm mr-4 btn-info text-white' onClick={()=>window.scrollTo(0,0)}><FaArrowAltCircleUp/></button>
   <img src="src/assets/poster/S082.jpg" alt="" />
   <div className=''>
     <p className='inline'>  <img src="src/assets/avatar/82.jpg"className='inline-block ' alt="" /></p>
